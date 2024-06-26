@@ -10,7 +10,7 @@ def haploidize_vcf(input_file, output_file):
             else:
                 #Parse variant information
                 fields = line.strip().split('\t')
-                genotypes = fields[9:]  # Genotypes start from column 10
+                genotypes = fields[9:]  #Genotypes start from column 10
 
                 #Modify the genotype information
                 haploid_genotypes = []
